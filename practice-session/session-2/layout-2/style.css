@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(3, 64, 64);
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.5fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-areas: 
+    "top-left top-left top-right"
+    "mid-left mid-center mid-right"
+    "mid-left bottom-center mid-right"
+    "bottom-left bottom-center mid-right";
+    gap: 10px;
+    padding: 10px;
+
+}
+
+
+.top-left {
+    background-color: brown;
+    grid-area: top-left;
+    border-radius: 20px;
+}
+
+
+.top-center {
+    background-color: rgb(220, 35, 35);
+    grid-area: top-center;
+    border-radius: 20px;
+
+}
+
+.top-right {
+    background-color: rgb(160, 61, 61);
+    grid-area: top-right;
+    border-radius: 20px;
+}
+
+.mid-left {
+    background-color: aqua;
+    grid-area: mid-left;
+    border-radius: 20px;
+}
+
+.mid-center {
+    background-color: rgb(61, 117, 117);
+    grid-area: mid-center;
+    border-radius: 20px;
+}
+
+.mid-right {
+    background-color: rgb(102, 118, 118);
+    grid-area: mid-right;
+    border-radius: 20px;
+}
+
+
+.bottom-left {
+    background-color: blue;
+    grid-area: bottom-left;
+    border-radius: 20px;
+}
+
+
+.bottom-center {
+    background-color: rgb(49, 49, 123);
+    grid-area: bottom-center;
+    border-radius: 20px;
+}
+
+
+.bottom-right {
+    background-color: rgb(118, 118, 143);
+    grid-area: bottom-right;
+    border-radius: 20px;
+}
